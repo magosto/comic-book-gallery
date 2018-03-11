@@ -10,6 +10,18 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
+
+            ViewBag.SeriesTitle = "The Amazing Spider-Man";
+            ViewBag.IssueNumber = 700;
+            ViewBag.Description = "<p>Final issue!</p>";
+            ViewBag.Artists = new string[]
+            {
+              "Script: Dan Slott",
+               "Pencil: Humberto Ramos",
+              "Inks: Victor Olazaba"
+            };
+
+
             return View();
         }
     }
